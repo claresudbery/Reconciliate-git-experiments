@@ -81,6 +81,8 @@ namespace ConsoleCatchallTests.Reconciliation.Loaders
                 mock_spreadsheet_repo,
                 2);
 
+            var fileLoader = new FileLoader(mock_input_output.Object);
+
             return new ReconciliationIntro(mock_input_output.Object);
         }
 
@@ -173,6 +175,13 @@ namespace ConsoleCatchallTests.Reconciliation.Loaders
             // CredCard2:
             Assert_pending_record_is_given_the_specified_CredCard2_direct_debit_details(pending_records[2], next_direct_debit_date01, expected_amount1);
             Assert_pending_record_is_given_the_specified_CredCard2_direct_debit_details(pending_records[3], next_direct_debit_date02, expected_amount2);
+        }
+    }
+
+    internal class FileLoader
+    {
+        public FileLoader(IInputOutput input_output)
+        {
         }
     }
 }
