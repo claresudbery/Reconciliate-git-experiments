@@ -111,7 +111,7 @@ namespace ConsoleCatchall.Console.Reconciliation.Loaders
             return reconciliation_interface;
         }
 
-        public ReconciliationInterface
+        private ReconciliationInterface
             Load_bank_and_bank_in(
                 ISpreadsheet spreadsheet,
                 BudgetingMonths budgeting_months,
@@ -164,7 +164,7 @@ namespace ConsoleCatchall.Console.Reconciliation.Loaders
             return reconciliation_interface;
         }
 
-        public ReconciliationInterface
+        private ReconciliationInterface
             Load_bank_and_bank_out(
                 ISpreadsheet spreadsheet,
                 BudgetingMonths budgeting_months,
@@ -221,7 +221,7 @@ namespace ConsoleCatchall.Console.Reconciliation.Loaders
             return reconciliation_interface;
         }
 
-        public ReconciliationInterface
+        private ReconciliationInterface
             Load_cred_card1_and_cred_card1_in_out(
                 ISpreadsheet spreadsheet,
                 BudgetingMonths budgeting_months,
@@ -274,7 +274,7 @@ namespace ConsoleCatchall.Console.Reconciliation.Loaders
             return reconciliation_interface;
         }
 
-        public ReconciliationInterface
+        private ReconciliationInterface
             Load_cred_card2_and_cred_card2_in_out(
                 ISpreadsheet spreadsheet,
                 BudgetingMonths budgeting_months,
