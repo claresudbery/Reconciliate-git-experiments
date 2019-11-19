@@ -16,7 +16,7 @@ namespace ConsoleCatchall.Console.Reconciliation.Loaders
 
         public void Bank_and_bank_out__Merge_bespoke_data_with_pending_file(
             IInputOutput input_output, 
-            Spreadsheet spreadsheet, 
+            ISpreadsheet spreadsheet, 
             ICSVFile<BankRecord> pending_file, 
             BudgetingMonths budgeting_months, 
             DataLoadingInformation loading_info)
