@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using ConsoleCatchall.Console.Reconciliation.Records;
 using ConsoleCatchall.Console.Reconciliation.Spreadsheets;
 using Interfaces;
 using Interfaces.Constants;
+using Interfaces.DTOs;
 
 namespace ConsoleCatchall.Console.Reconciliation.Loaders
 {
@@ -10,6 +12,11 @@ namespace ConsoleCatchall.Console.Reconciliation.Loaders
     {
         public FileLoader(IInputOutput input_output)
         {
+        }
+
+        public void Bank_and_bank_out__Merge_bespoke_data_with_pending_file(IInputOutput input_output, Spreadsheet spreadsheet, ICSVFile<BankRecord> csv_file, BudgetingMonths budgeting_months, DataLoadingInformation loading_info)
+        {
+            throw new NotImplementedException();
         }
 
         private void Bank_and_bank_out__Add_most_recent_credit_card_direct_debits(
